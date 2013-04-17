@@ -1,0 +1,91 @@
+class CPrueba
+	-- Se definen tipos
+	types
+			a==1  ..
+
+->2d
+-`Ö?
+
+!
+
+$%
+/(/
+/)())
+@#
+
+
+
+
+
+	/*Variables de instancia
+	Se declaran variables
+	*/
+
+
+	/*Operaciones:
+	Se declaran funciones
+	*/
+    operations
+
+º  7
+
+
+3dato
+
+	public operacion_bucle : nat¬ ==> int
+	operacion_bucle(p) ==
+	(¬
+		dcl i : int := 1;
+		dcl k : int := p;
+		while i <> 10 do
+		(¬
+			k :=k*10;
+			i:=i+1;
+		);
+		return k;
+	);
+
+	public producto : seq o¬f int ==> int
+	producto(S) ==
+	(
+		dcl prod : int := 1;
+		for i=1 to len S by 1 do
+			prod:=prod*S(i);
+		
+		prod:=1;		
+
+		¬for i=1 to len S do
+			prod:=prod*S(i);
+
+		for elem in S do
+			prod:=prod*elem;
+
+		return prod;
+	);
+
+	public ver_cad1 : nat1 ==> char --Los indices deben ser de 1..n
+    ver_cad1(i) == 
+	(
+		return cad1(¬i); --Concatenacion
+	);
+
+	public ejmswitch : nat1 ==> nat
+	ejmswitch(k) ==
+	(
+		cases k:
+			1,2,3 -> return 10,
+			4,5,6 -> return 20,
+			others -> return 30
+		end
+	);
+
+--Tests: entradas para operaciones
+traces
+
+traza1: 	
+	ver_cad1(3);
+
+traza2:
+	ver_cad1(3);
+
+end CPrueba 

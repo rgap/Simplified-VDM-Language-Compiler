@@ -1,0 +1,680 @@
+
+Archivo de reporte: reporte.txt
+Reporte Compilacion de archivo: ejemplo2.txt
+
+--------------------------Analisis Lexico--------------------------
+
+Linea 1 :
+	ESPECIFICO:	 Lexema: class	 Token: T_CLASS
+
+	NO ESPECIFICO:	 Lexema: CPrueba	 Token: T_ID	 Tipo: 
+	Lineas: 1
+
+
+Linea 3 :
+	ESPECIFICO:	 Lexema: types	 Token: T_TYPES
+
+
+Linea 4 :
+	NO ESPECIFICO:	 Lexema: a	 Token: T_ID	 Tipo: 
+	Lineas: 4
+
+	ESPECIFICO:	 Lexema: ==	 Token: T_OPDEF_OP
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4
+
+	ERROR: Se esperaba un ( . )
+Linea 5 :
+	ESPECIFICO:	 Lexema: 	 Token: 
+
+	NO ESPECIFICO:	 Lexema: 2	 Token: T_NUMERO	 Tipo: 
+	Lineas: 5
+
+	NO ESPECIFICO:	 Lexema: d	 Token: T_ID	 Tipo: 
+	Lineas: 5
+
+
+Linea 6 :
+	ESPECIFICO:	 Lexema: -	 Token: T_MENOS
+
+	ERROR: Caracter no valido `	ERROR: Caracter no valido (No ASCII) Ö	ERROR: Caracter no valido ?
+Linea 8 :
+	ERROR: Caracter no valido !
+Linea 10 :
+	NO ESPECIFICO:	 Lexema: $	 Token: T_ID	 Tipo: 
+	Lineas: 10
+
+	ERROR: Caracter no valido %
+Linea 11 :
+	ESPECIFICO:	 Lexema: /	 Token: T_DIV
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	ESPECIFICO:	 Lexema: /	 Token: T_DIV
+
+
+Linea 12 :
+	ESPECIFICO:	 Lexema: /	 Token: T_DIV
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+
+Linea 13 :
+	ERROR: Caracter no valido @	ERROR: Caracter no valido #
+Linea 27 :
+	ESPECIFICO:	 Lexema: operations	 Token: T_OPERATS
+
+
+Linea 29 :
+	ERROR: Caracter no valido (No ASCII) º	NO ESPECIFICO:	 Lexema: 7	 Token: T_NUMERO	 Tipo: 
+	Lineas: 29
+
+
+Linea 32 :
+	NO ESPECIFICO:	 Lexema: 3	 Token: T_NUMERO	 Tipo: 
+	Lineas: 32
+
+	NO ESPECIFICO:	 Lexema: dato	 Token: T_ID	 Tipo: 
+	Lineas: 32
+
+
+Linea 34 :
+	ESPECIFICO:	 Lexema: public	 Token: T_PUBLIC
+
+	NO ESPECIFICO:	 Lexema: operacion_bucle	 Token: T_ID	 Tipo: 
+	Lineas: 34
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: nat	 Token: T_NAT
+
+	ERROR: Caracter no valido (No ASCII) ¬	ESPECIFICO:	 Lexema: ==>	 Token: T_OPDECL_OP
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+
+Linea 35 :
+	NO ESPECIFICO:	 Lexema: operacion_bucle	 Token: T_ID	 Tipo: 
+	Lineas: 34, 35
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: p	 Token: T_ID	 Tipo: 
+	Lineas: 35
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ==	 Token: T_OPDEF_OP
+
+
+Linea 36 :
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	ERROR: Caracter no valido (No ASCII) ¬
+Linea 37 :
+	ESPECIFICO:	 Lexema: dcl	 Token: T_DECLARE
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 38 :
+	ESPECIFICO:	 Lexema: dcl	 Token: T_DECLARE
+
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: p	 Token: T_ID	 Tipo: 
+	Lineas: 35, 38
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 39 :
+	ESPECIFICO:	 Lexema: while	 Token: T_WHILE
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39
+
+	ESPECIFICO:	 Lexema: <>	 Token: T_DIF
+
+	NO ESPECIFICO:	 Lexema: 10	 Token: T_NUMERO	 Tipo: 
+	Lineas: 39
+
+	ESPECIFICO:	 Lexema: do	 Token: T_DO
+
+
+Linea 40 :
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	ERROR: Caracter no valido (No ASCII) ¬
+Linea 41 :
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38, 41
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38, 41, 41
+
+	ESPECIFICO:	 Lexema: *	 Token: T_MULT
+
+	NO ESPECIFICO:	 Lexema: 10	 Token: T_NUMERO	 Tipo: 
+	Lineas: 39, 41
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 42 :
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42
+
+	ESPECIFICO:	 Lexema: +	 Token: T_MAS
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 43 :
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 44 :
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38, 41, 41, 44
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 45 :
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 47 :
+	ESPECIFICO:	 Lexema: public	 Token: T_PUBLIC
+
+	NO ESPECIFICO:	 Lexema: producto	 Token: T_ID	 Tipo: 
+	Lineas: 47
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: seq	 Token: T_SEQ
+
+	NO ESPECIFICO:	 Lexema: o	 Token: T_ID	 Tipo: 
+	Lineas: 47
+
+	ERROR: Caracter no valido (No ASCII) ¬	NO ESPECIFICO:	 Lexema: f	 Token: T_ID	 Tipo: 
+	Lineas: 47
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+	ESPECIFICO:	 Lexema: ==>	 Token: T_OPDECL_OP
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+
+Linea 48 :
+	NO ESPECIFICO:	 Lexema: producto	 Token: T_ID	 Tipo: 
+	Lineas: 47, 48
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ==	 Token: T_OPDEF_OP
+
+
+Linea 49 :
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+
+Linea 50 :
+	ESPECIFICO:	 Lexema: dcl	 Token: T_DECLARE
+
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: int	 Token: T_INT
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 51 :
+	ESPECIFICO:	 Lexema: for	 Token: T_FOR
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51
+
+	ESPECIFICO:	 Lexema: =	 Token: T_IGUAL
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50, 51
+
+	ESPECIFICO:	 Lexema: to	 Token: T_TO
+
+	ESPECIFICO:	 Lexema: len	 Token: T_LENGTH
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48, 51
+
+	ESPECIFICO:	 Lexema: by	 Token: T_BY
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50, 51, 51
+
+	ESPECIFICO:	 Lexema: do	 Token: T_DO
+
+
+Linea 52 :
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52
+
+	ESPECIFICO:	 Lexema: *	 Token: T_MULT
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48, 51, 52
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51, 52
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 54 :
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50, 51, 51, 54
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 56 :
+	ERROR: Caracter no valido (No ASCII) ¬	ESPECIFICO:	 Lexema: for	 Token: T_FOR
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51, 52, 56
+
+	ESPECIFICO:	 Lexema: =	 Token: T_IGUAL
+
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50, 51, 51, 54, 56
+
+	ESPECIFICO:	 Lexema: to	 Token: T_TO
+
+	ESPECIFICO:	 Lexema: len	 Token: T_LENGTH
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48, 51, 52, 56
+
+	ESPECIFICO:	 Lexema: do	 Token: T_DO
+
+
+Linea 57 :
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54, 57
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54, 57, 57
+
+	ESPECIFICO:	 Lexema: *	 Token: T_MULT
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48, 51, 52, 56, 57
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51, 52, 56, 57
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 59 :
+	ESPECIFICO:	 Lexema: for	 Token: T_FOR
+
+	NO ESPECIFICO:	 Lexema: elem	 Token: T_ID	 Tipo: 
+	Lineas: 59
+
+	ESPECIFICO:	 Lexema: in	 Token: T_IN
+
+	NO ESPECIFICO:	 Lexema: S	 Token: T_ID	 Tipo: 
+	Lineas: 48, 51, 52, 56, 57, 59
+
+	ESPECIFICO:	 Lexema: do	 Token: T_DO
+
+
+Linea 60 :
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54, 57, 57, 60
+
+	ESPECIFICO:	 Lexema: :=	 Token: T_ASIGNE
+
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54, 57, 57, 60, 60
+
+	ESPECIFICO:	 Lexema: *	 Token: T_MULT
+
+	NO ESPECIFICO:	 Lexema: elem	 Token: T_ID	 Tipo: 
+	Lineas: 59, 60
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 62 :
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: prod	 Token: T_ID	 Tipo: 
+	Lineas: 50, 52, 52, 54, 57, 57, 60, 60, 62
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 63 :
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 65 :
+	ESPECIFICO:	 Lexema: public	 Token: T_PUBLIC
+
+	NO ESPECIFICO:	 Lexema: ver_cad1	 Token: T_ID	 Tipo: 
+	Lineas: 65
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: nat1	 Token: T_NAT1
+
+	ESPECIFICO:	 Lexema: ==>	 Token: T_OPDECL_OP
+
+	ESPECIFICO:	 Lexema: char	 Token: T_CHAR
+
+
+Linea 66 :
+	NO ESPECIFICO:	 Lexema: ver_cad1	 Token: T_ID	 Tipo: 
+	Lineas: 65, 66
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51, 52, 56, 57, 66
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ==	 Token: T_OPDEF_OP
+
+
+Linea 67 :
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+
+Linea 68 :
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: cad1	 Token: T_ID	 Tipo: 
+	Lineas: 68
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	ERROR: Caracter no valido (No ASCII) ¬	NO ESPECIFICO:	 Lexema: i	 Token: T_ID	 Tipo: 
+	Lineas: 37, 39, 42, 42, 51, 52, 56, 57, 66, 68
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 69 :
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 71 :
+	ESPECIFICO:	 Lexema: public	 Token: T_PUBLIC
+
+	NO ESPECIFICO:	 Lexema: ejmswitch	 Token: T_ID	 Tipo: 
+	Lineas: 71
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+	ESPECIFICO:	 Lexema: nat1	 Token: T_NAT1
+
+	ESPECIFICO:	 Lexema: ==>	 Token: T_OPDECL_OP
+
+	ESPECIFICO:	 Lexema: nat	 Token: T_NAT
+
+
+Linea 72 :
+	NO ESPECIFICO:	 Lexema: ejmswitch	 Token: T_ID	 Tipo: 
+	Lineas: 71, 72
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38, 41, 41, 44, 72
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ==	 Token: T_OPDEF_OP
+
+
+Linea 73 :
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+
+Linea 74 :
+	ESPECIFICO:	 Lexema: cases	 Token: T_CASES
+
+	NO ESPECIFICO:	 Lexema: k	 Token: T_ID	 Tipo: 
+	Lineas: 38, 41, 41, 44, 72, 74
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+
+Linea 75 :
+	NO ESPECIFICO:	 Lexema: 1	 Token: T_NUMERO	 Tipo: 
+	Lineas: 4, 37, 42, 50, 51, 51, 54, 56, 75
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+	NO ESPECIFICO:	 Lexema: 2	 Token: T_NUMERO	 Tipo: 
+	Lineas: 5, 75
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+	NO ESPECIFICO:	 Lexema: 3	 Token: T_NUMERO	 Tipo: 
+	Lineas: 32, 75
+
+	ESPECIFICO:	 Lexema: ->	 Token: T_FLECHA
+
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: 10	 Token: T_NUMERO	 Tipo: 
+	Lineas: 39, 41, 75
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+
+Linea 76 :
+	NO ESPECIFICO:	 Lexema: 4	 Token: T_NUMERO	 Tipo: 
+	Lineas: 76
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+	NO ESPECIFICO:	 Lexema: 5	 Token: T_NUMERO	 Tipo: 
+	Lineas: 76
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+	NO ESPECIFICO:	 Lexema: 6	 Token: T_NUMERO	 Tipo: 
+	Lineas: 76
+
+	ESPECIFICO:	 Lexema: ->	 Token: T_FLECHA
+
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: 20	 Token: T_NUMERO	 Tipo: 
+	Lineas: 76
+
+	ESPECIFICO:	 Lexema: ,	 Token: T_COMA
+
+
+Linea 77 :
+	ESPECIFICO:	 Lexema: others	 Token: T_OTHERS
+
+	ESPECIFICO:	 Lexema: ->	 Token: T_FLECHA
+
+	ESPECIFICO:	 Lexema: return	 Token: T_RETURN
+
+	NO ESPECIFICO:	 Lexema: 30	 Token: T_NUMERO	 Tipo: 
+	Lineas: 77
+
+
+Linea 78 :
+	ESPECIFICO:	 Lexema: end	 Token: T_END
+
+
+Linea 79 :
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 82 :
+	ESPECIFICO:	 Lexema: traces	 Token: T_TRACES
+
+
+Linea 84 :
+	NO ESPECIFICO:	 Lexema: traza1	 Token: T_ID	 Tipo: 
+	Lineas: 84
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+
+Linea 85 :
+	NO ESPECIFICO:	 Lexema: ver_cad1	 Token: T_ID	 Tipo: 
+	Lineas: 65, 66, 85
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: 3	 Token: T_NUMERO	 Tipo: 
+	Lineas: 32, 75, 85
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 87 :
+	NO ESPECIFICO:	 Lexema: traza2	 Token: T_ID	 Tipo: 
+	Lineas: 87
+
+	ESPECIFICO:	 Lexema: :	 Token: T_DOSPUNTOS
+
+
+Linea 88 :
+	NO ESPECIFICO:	 Lexema: ver_cad1	 Token: T_ID	 Tipo: 
+	Lineas: 65, 66, 85, 88
+
+	ESPECIFICO:	 Lexema: (	 Token: T_PAR_A
+
+	NO ESPECIFICO:	 Lexema: 3	 Token: T_NUMERO	 Tipo: 
+	Lineas: 32, 75, 85, 88
+
+	ESPECIFICO:	 Lexema: )	 Token: T_PAR_C
+
+	ESPECIFICO:	 Lexema: ;	 Token: T_PCOMA
+
+
+Linea 90 :
+	ESPECIFICO:	 Lexema: end	 Token: T_END
+
+	NO ESPECIFICO:	 Lexema: CPrueba	 Token: T_ID	 Tipo: 
+	Lineas: 1, 90
+
+
+
+------------------------FIN DEL ANALISIS LEXICO------------------------
+
+>>>> Analisis lexico con errores <<<<
+Numero de errores: 15
+ERROR #1 : Tipo error: Se esperaba un ( . )	Linea: 4	error: ..
+ERROR #2 : Tipo error: Caracter no valido	Linea: 6	error: `
+ERROR #3 : Tipo error: Caracter no valido (No ASCII)	Linea: 6	error: Ö
+ERROR #4 : Tipo error: Caracter no valido	Linea: 6	error: ?
+ERROR #5 : Tipo error: Caracter no valido	Linea: 8	error: !
+ERROR #6 : Tipo error: Caracter no valido	Linea: 10	error: %
+ERROR #7 : Tipo error: Caracter no valido	Linea: 13	error: @
+ERROR #8 : Tipo error: Caracter no valido	Linea: 13	error: #
+ERROR #9 : Tipo error: Caracter no valido (No ASCII)	Linea: 29	error: º
+ERROR #10 : Tipo error: Caracter no valido (No ASCII)	Linea: 34	error: ¬
+ERROR #11 : Tipo error: Caracter no valido (No ASCII)	Linea: 36	error: ¬
+ERROR #12 : Tipo error: Caracter no valido (No ASCII)	Linea: 40	error: ¬
+ERROR #13 : Tipo error: Caracter no valido (No ASCII)	Linea: 47	error: ¬
+ERROR #14 : Tipo error: Caracter no valido (No ASCII)	Linea: 56	error: ¬
+ERROR #15 : Tipo error: Caracter no valido (No ASCII)	Linea: 68	error: ¬

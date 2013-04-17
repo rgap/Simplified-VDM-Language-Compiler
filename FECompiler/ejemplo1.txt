@@ -1,0 +1,154 @@
+class CPrueba
+	-- Se definen tipos
+	types
+	private ident = real;
+
+	-- Se definen constantes
+	values
+	private ctte1 = 10;
+	
+	/*Variables de instancia
+	Se declaran variables
+	*/
+	instance variables
+	private $a1 : nat1;
+	private $$a2 : nat1;
+	--private 1a : nat1;
+	--private _a : nat1;
+	private b : nat := -10 + 20mod 4 - 50/(5**2) + 20*5 +20.5;
+	private c : int := -1;
+	private d1 : real := 3.1415;
+	--private d2 : real := .1415;
+	private e : char := 'e';
+	private flag1 : bool := false; 
+	private flag2 : bool := (true and true) or not flag1; 
+    private cad1 : seq of char := "cadena1";
+	private array : seq of int :=[1,2,3,4];
+
+	/*Operaciones:
+	Se declaran funciones
+	*/
+    operations
+
+	public operacion_bucle : nat ==> int
+	operacion_bucle(p) ==
+	(
+		dcl i : int := 1;
+		dcl k : int := p;
+		while i <> 10 do
+		(
+			k :=k*10;
+			i:=i+1;
+		);
+		return k;
+	);
+
+	public producto : seq of int ==> int
+	producto(S) ==
+	(
+		dcl prod : int := 1;
+		for i=1 to len S by 1 do
+			prod:=prod*S(i);
+		
+		prod:=1;		
+
+		for i=1 to len S do
+			prod:=prod*S(i);
+
+		for elem in S do
+			prod:=prod*elem;
+
+		return prod;
+	);
+
+	public ver_cad1 : nat1 ==> char --Los indices deben ser de 1..n
+    ver_cad1(i) == 
+	(
+		return cad1(i); --Concatenacion
+	);
+
+	public ejmswitch : nat1 ==> nat
+	ejmswitch(k) ==
+	(
+		cases k:
+			1,2,3 -> return 10,
+			4,5,6 -> return 20,
+			others -> return 30
+		end
+	);
+
+--Tests: entradas para operaciones
+traces
+
+traza1: 	
+	ver_cad1(3);
+
+traza2:
+	ver_cad1(3);
+
+end CPrueba 
+
+
+class Calificacion
+	values
+	private valor = 10;
+
+	instance variables
+	private nota1: nat;
+	private nota2: nat;
+
+	operations
+	public CalificacionInit : nat * nat ==> () --Constructor
+	CalificacionInit(n1,n2) == 
+	(
+		nota1 := n1;
+		nota2 := n2;
+	);
+
+	public calif_promedio : () ==> nat1 
+	calif_promedio() ==
+	( 
+		dcl x : real := (nota1+nota2)/2;
+		if x > valor
+			then return 1
+		elseif x = valor
+			then return 2
+		else return 3
+	);
+
+
+end Calificacion
+
+
+class Alumno
+	instance variables
+	private c: Calificacion := new Calificacion();
+	private nota : nat1;
+
+	operations
+	public AlumnoInit: nat*nat ==> () --types are class attributes
+	AlumnoInit(a,b) ==
+	(
+		c.CalificacionInit(a,b);
+	);
+
+	public get_calif: () ==> nat1 --types are class attributes
+	get_calif() ==
+	(
+		nota:=c.calif_promedio();
+		return nota;
+	);
+
+traces 
+
+trazaAlumno:
+	let t1 in set {1,...,10}
+	in(
+		let t2 in set {1,...,15}
+		in(
+			AlumnoInit(t1,t2);
+			get_calif()
+		)
+	)
+
+end Alumno
